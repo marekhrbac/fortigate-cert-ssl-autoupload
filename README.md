@@ -2,9 +2,14 @@
 
 ## Description
 
-This Python script automates uploading certificate to FortiGate firewall using REST API. It uploads a certificate along with its private key, assigns a unique timestamped name to avoid conflicts, and updates a specified SSL/SSH profile to use the newly imported certificate.
+This Python script automates uploading certificates to a FortiGate firewall using the REST API. It uploads a certificate along with its private key, assigns a unique timestamped name to avoid conflicts, and updates a specified SSL/SSH profile to use the newly imported certificate.
 
 The script supports multiple certificates in a single run, making it suitable for automated certificate rotation and consistent configuration management across environments.
+
+Two variants of the script are available:
+
+One version handles certificates in PFX (PKCS#12) format.
+The other version works with PEM-encoded certificates and private keys.
 
 ---
 
